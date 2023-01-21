@@ -77,18 +77,6 @@ body{
     width: 389px;
 }
 
-/*
-.cards-item :nth-child(2){
-    box-shadow: 0px 15px 25px 5px #84d8d5;
-}
-*/
-
-.cards-item :nth-child(3){
-    margin-right: 0;
-    /*box-shadow: 15px 15px 25px 5px #84d;*/
-}
-
-
 .card-name{
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
@@ -120,6 +108,7 @@ body{
     margin-top: 30px;
     margin-bottom: 23px;
 }
+
 .map-button{
     margin-bottom: 40px;
 }
