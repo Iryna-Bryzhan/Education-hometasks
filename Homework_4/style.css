@@ -1,0 +1,173 @@
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header{
+    padding: 20px;
+}
+.logo{
+    font-family: 'Marcellus', serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.blue{
+    color:  #3E45E8;
+}
+.yellow{
+    color: #E8C23E;
+}
+.banner{
+    background-image: url(/img/background.png);
+    padding: 220px 220px 220px 90px;
+    background-repeat: no-repeat;
+    margin-bottom: 48px;
+} 
+.banner-image{
+    display: inline-block;
+    margin-right: 38px;
+}   
+.banner-text{
+    font-family: 'Noto Sans', sans-serif;
+    display: inline-block;
+    width: 1038px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 170%;
+    color: white;
+}
+.cards{
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.title{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 157.3%;
+    color: #000000;
+    text-transform: uppercase;
+}
+.cards-image{
+    left: -80px;
+    position: relative;
+    margin-bottom: 42px;
+}
+
+.cards-item{
+    display: flex;
+    justify-content: space-between;
+} 
+.cards-item a{
+    text-decoration: none;
+}
+.card{
+    width: 388px;
+    height: 481px;
+    border: 5px solid #0D095F;
+    border-radius: 35px;
+    box-shadow: -15px 15px 25px 5px #84d6fc;
+}
+
+.card-image img{
+    width: 389px;
+}
+
+/*
+.cards-item :nth-child(2){
+    box-shadow: 0px 15px 25px 5px #84d8d5;
+}
+*/
+
+.cards-item :nth-child(3){
+    margin-right: 0;
+    /*box-shadow: 15px 15px 25px 5px #84d;*/
+}
+
+
+.card-name{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 157.3%;
+    color: #0072DB;
+    margin: 10px;
+}
+.card-description{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FF9900;
+    width: 290px;
+    margin-left: 10px;
+    max-height:70px;
+}
+.map{
+    text-align: center;
+}
+.map-line{
+    width: 590px;
+    height: 7px;
+    background: #1400FF;;
+    margin: 0 auto;
+}
+.map-image{
+    margin-top: 30px;
+    margin-bottom: 23px;
+}
+.map-button{
+    margin-bottom: 40px;
+}
+.button{
+    padding: 0 200px;
+    background: #2A61F0;
+    border-radius: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+ 
+.footer{
+    padding-top: 10px;
+    text-align: center;
+    background: linear-gradient(180deg, #013235 0%, #0D0661 100%);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact a{
+    text-decoration: none;
+    font-family: 'Marcellus SC', serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.1em;
+    color: #A89D9D ;
+}
+.social_icon{
+    width: 172px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 20px;
+   padding-bottom: 20px;
+}
+
+/*Второй вариант*/
+/* 
+.social_icon a{
+    margin-right: 28px;
+}
+.social_icon :nth-child(3){
+    margin-right: 0;
+}
+*/
