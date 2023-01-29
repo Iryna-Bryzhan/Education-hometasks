@@ -21,8 +21,8 @@ body{
     color: #E8C23E;
 }
 .banner{
-    background-image: url(/img/background.png);
-    padding: 220px 220px 220px 90px;
+    background-image: url(./img/background.png);
+    padding: 15% 15% 15% 6%;
     background-repeat: no-repeat;
     margin-bottom: 48px;
 } 
@@ -33,7 +33,7 @@ body{
 .banner-text{
     font-family: 'Noto Sans', sans-serif;
     display: inline-block;
-    width: 1038px;
+    width: 87%;
     font-weight: 700;
     font-size: 48px;
     line-height: 170%;
@@ -66,15 +66,19 @@ body{
     text-decoration: none;
 }
 .card{
-    width: 388px;
+    width: 100%;
     height: 481px;
     border: 5px solid #0D095F;
     border-radius: 35px;
     box-shadow: -15px 15px 25px 5px #84d6fc;
 }
-
+/*
+.cards-item :nth-child(2){
+    box-shadow: -15px 15px 25px 5px #84f2b2;
+}
+*/
 .card-image img{
-    width: 389px;
+    width: 100%;
 }
 
 .card-name{
