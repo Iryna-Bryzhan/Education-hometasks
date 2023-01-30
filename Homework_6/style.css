@@ -157,12 +157,20 @@ ul{
     box-sizing: border-box;
 }
 .about{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-right: 50px;
 }
 .about__photo{
+    width: 45%;
     margin-right: 90px;
+}
+.about__photo img{
+    width: 100%;
+}
+.about__content{
+    width: 54%;
 }
 .subtitle{
     font-family: 'Poppins';

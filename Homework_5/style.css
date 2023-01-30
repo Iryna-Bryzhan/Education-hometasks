@@ -1,19 +1,24 @@
 body{
-    position: relative;
-    max-width: 1920px;
     margin: 0 auto;
+}
+.background{
     background-color: #FBE4FF;
 }
 ul{
     padding: 0px;
 }
 .header{
-    padding: 0 300px;
-    height: 65px;
+    padding: 0 15% ;
+    height: 10vh;
     background: #243B93;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@media (max-width: 1500px) {
+    .header{
+        padding: 0 5% ;
+    }
 }
 .header__logo{
     width: 20%;
@@ -63,6 +68,7 @@ ul{
     color: #202846;
 }
 .menu-section{
+    padding: 0 5%;
     background: #BFF0FF;
     height: 85px;
     padding-top: 17px;
@@ -88,7 +94,7 @@ ul{
     color: rgba(0, 0, 0, 0.61);
 }
 .card{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     background: linear-gradient(92.95deg, #ADCBD5 0%, #00AEE6 100%);
@@ -175,6 +181,7 @@ ul{
     background: #EF075B;
 }
 .personal-date{
+    width: 90%;
     display: flex;
     justify-content: space-around;
     background: linear-gradient(180deg, #859EFF 0%, rgba(105, 255, 210, 0.5) 100%);
@@ -228,7 +235,7 @@ ul{
     font-weight: 400;
 }
 .contact{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
     margin: 25px auto;
@@ -267,8 +274,10 @@ ul{
     width: 100%;
 }
 .arrow{
-    position: sticky;
-    top: 85vh;
+    position: fixed;
+    right: 2%;
+    bottom: 15%;
+    z-index: 1;
 }
 .arrow img{
     position: absolute;
@@ -283,7 +292,7 @@ ul{
 }
 .footer{
     background: #243B93;
-    padding: 25px 300px;
+    padding: 1.5% 15%;
 }
 .footer__text{
     font-family: 'PT Sans';
