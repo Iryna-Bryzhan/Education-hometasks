@@ -1,8 +1,12 @@
 body{
-    position: relative;
-    margin: 0 auto;
+    margin: 0;
+}
+.background{
     background: #212529;
-    max-width: 1440px;
+}
+.container{
+     max-width: 1440px;
+      margin: 0 auto;
 }
 ul{
     padding: 0;
@@ -23,6 +27,7 @@ ul{
 .menu__list{
     display: flex;
     justify-content: space-around;
+    
 }
 .menu__list-item{
     font-family: 'Poppins', sans-serif;
@@ -251,7 +256,7 @@ ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin: 0 300px;
+    margin: 0 15%;
     margin-bottom: 50px;
 }
 .types-list a{
@@ -326,7 +331,11 @@ ul{
 .review__person{
     display: flex;
     justify-content: space-between;
-    width: 240px;
+    max-width: 240px;
+}
+
+.review__person-photo img{
+    width: 100%;
 }
 .review__person-inform{
     display: flex;
