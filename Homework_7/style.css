@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+}
+.container{
+    background-color: #001124;
+    margin: 0 auto;
+}
+.login-page{
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+    padding-top: 190px;
+    box-sizing: border-box;
+}
+.login-page__img{
+    width: 52%;
+    margin-right: 107px;
+}
+.login-page__img img{
+    width: 100%;
+}
+.login-page__form{
+    width: 48%;
+    margin-top: 3%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form__title{
+    margin-bottom: 40px;
+}
+.title{
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.input > label{
+    font-family: 'Padauk';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.input > input{
+    height: 43px;
+    max-width: 360px;
+    font-size: 24px;
+    box-sizing: border-box;
+    outline: none;
+}
+.form-link{
+    font-family: 'Padauk';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #499FFE;
+    text-decoration: none;
+}
+.form > span{
+    font-family: 'Padauk';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.login-page__button{
+    max-width: 26%;
+}
+.button{
+    width: 100%;
+    height: 43px;
+    background-color: #015FC7;
+    cursor: pointer;
+    font-family: 'Padauk';
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: none;
+}
+.button:hover{
+    background-color: #1d84fa;
+}
+.registration-form{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 10%;
+    box-sizing: border-box;
+}
+.registration-form__img{
+    width: 40%;
+    margin-right: 230px;
+}
+.registration-form__img img{
+    width: 100%;
+}
+.registration-form__form{
+    width: 35%;
+}
+.registration-form__button{
+    width: 44%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.wrap{
+    max-width: 905px;
+    margin: 0 auto;
+    background-color:  #F9F9F9;
+    padding: 3% 3% 5% 3%;
+}
+.title-page{
+    margin-bottom: 70px;
+}
+.title-page > p{
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #171717;
+    margin: 0;
+}
+.note > p{
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+.note{
+    margin-bottom: 24px;
+}
+.section__title{
+    margin-bottom: 32px;
+}
+.required-input{
+    color:  #D83933;
+}
+.title-section{
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #171717;
+}
+.section__content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #D1D1D1;
+    margin-bottom: 32px;
+}
+.section__content--center{
+    align-items: center;
+}
+.section__content-left,
+.section__content-right{
+    width: 45%;
+}
+.section-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.section-input > label{
+    font-family: 'Public Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #171717;
+    margin-bottom: 8px;
+    }
+.section-input > input,
+.section-input > select{
+    padding: 2% 3% 2% 2.5%;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #171717;
+    border: 1px solid #ADADAD;
+    border-radius: 4px;
+    appearance: none;
+    margin-bottom: 18px;
+    outline: none;
+}
+.section-input--background{
+    background-image: url(./img/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: right 15px;
+    background-position-x: 95%;
+}
+.section-input--background-search{
+    background-image: url(./img/лупа.svg);
+    background-repeat: no-repeat;
+    background-position: right 8px;
+    background-position-x: 95%;
+}
+input[type="date"]{
+    text-align: center;
+}
+.section-checkbox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+}
+.section-checkbox > input{
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    accent-color:  #FF00FF;
+    border-radius: 2px;
+}
+.section-checkbox > label{
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #171717;
+    width: 90%;
+}
+input[id="enrollment-submission-date"]{
+    margin-bottom: 140px;
+}
+.section__content-right > .section-checkbox{
+    margin-bottom: 50px;
+    
+}
+.blank-button{
+    display: flex;
+    justify-content: end;
+}
+.blank-button button{
+    width: 8%;
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    -ms-cl
+}
+input[type='search']::-webkit-search-decoration, 
+input[type='search']::-webkit-search-cancel-button, 
+input[type='search']::-webkit-search-results-button, 
+input[type='search']::-webkit-search-results-decoration {
+ display: none;
+}

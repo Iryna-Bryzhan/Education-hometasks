@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intake Main Flow</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Padauk&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="wrap">
+    <div class="  title-page">
+       <p>Intake Main Flow</p> 
+    </div>
+    <div class="note">
+        <p><span class="required-input">* </span>Mandatory field</p>
+    </div>
+    <section class="section">
+        <div class="section__title">
+            <div class="title-section">Information</div>
+        </div>
+         <form class="section__content" action="">
+                
+            <div class="section__content-left">
+                
+                <div class="section-input">
+                    <label for="referral">Intake Type<span class="required-input">*</span> (select)</label>
+                    <select class="section-input--background" id="referral" type="text" required>
+                        <option value="">Referral</option>
+                        <option value="option-1">Option-1</option>
+                        <option value="option-2">Option-2</option>
+                        <option value="option-3">Option-3</option>
+                        <option value="option-4">Option-4</option>
+                    </select>
+                </div>
+                <div class="section-input">
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="tel" placeholder="Phone">
+                </div>
+                <div class="section-input">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Email">
+                </div>
+                <div class="section-input">
+                    <label for="app">Application Registration (Optional)</label>
+                    <input id="application-registration" type="text" placeholder="APP0000116">
+                </div>
+                <div class="section-input">
+                    <label for="requested-date">Additional Information Requested Date (Optional)</label>
+                    <input id="requested-date" type="date">
+                </div>  
+                <div class="section-input">
+                    <label for="remaining-days">Remaining Days Before Referral is Purged (Optional)</label>
+                    <input id="remaining-days" type="text">
+                </div>  
+                <div class="section-input">
+                    <label for="fee-payment-date">Fee Payment Date (Optional)</label>
+                    <input id="fee-payment-date" type="date">
+                </div>  
+                <div class="section-checkbox">
+                    <input type="checkbox" name="checkbox" id="application-fee-processed">
+                    <label for="application-fee-processed">Application Fee Processed</label>
+                </div>
+                
+            </div>
+
+            <div class="section__content-right">
+                <div class="section-input">
+                    <label for="enrollment-initiation-date-jquery">Enrollment Initiation Date jquery</label>
+                    <input id="enrollment-initiation-date-jquery" type="date" disabled>
+                </div> 
+                <div class="section-input">
+                    <label for="application-category">Application Category <span class="required-input">*</span></label>
+                    <select class="section-input--background" id="application-category" type="text" required>
+                        <option value="">Child Support</option>
+                        <option value="option-1">Option-1</option>
+                        <option value="option-2">Option-2</option>
+                        <option value="option-3">Option-3</option>
+                        <option value="option-4">Option-4</option>
+                    </select>
+                </div>
+                <div class="section-input">
+                    <label for="enrollment-submission-date">Enrollment Submission Date (Optional)</label>
+                    <input id="enrollment-submission-date" type="date" disabled>
+                </div>
+                <div class="section-checkbox">
+                    <input type="checkbox" name="checkbox" id="purged">
+                    <label for="purged">Purged</label>
+                </div>
+                <div class="section-input">
+                    <label for="exempt-from-paternityy">Exempt from Paternity (Optional)</label>
+                    <select class="section-input--background" id="exempt-from-paternity" type="text" >
+                        <option value="">No</option>
+                        <option value="option-1">Yes</option>
+                    </select>
+                </div>
+                <div class="section-input">
+                    <label for="enrollment-status">Enrollment Status (Optional)</label>
+                    <select class="section-input--background" id="enrollment-status" type="text" >
+                        <option value="">Worklisted</option>
+                        <option value="option-1">Option-1</option>
+                        <option value="option-2">Option-2</option>
+                        <option value="option-3">Option-3</option>
+                        <option value="option-4">Option-4</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="section">
+        <div class="section__title">
+            <div class="title-section">Maternity Information</div>
+        </div>
+             
+        <form class="section__content section__content--center" action="">
+                    
+            <div class="section__content-left">
+                <div class="section-checkbox">
+                    <input type="checkbox" name="checkbox" id="requesting-child-support">
+                    <label for="requesting-child-support">Are you requesting child support services for an
+                            unborn child?</label>
+                </div>
+            </div>   
+
+            <div class="section__content-right">
+                <div class="section-input">
+                    <label for="other-bological-parent">Other known biological parent? (Optional)</label>
+                    <input class="section-input" id="other-bological-parent" type="text" placeholder="None">
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="section">
+        <div class="section__title">
+            <div class="title-section">Official Use</div>
+        </div>
+        <form class="section__content" action="">
+                    
+            <div class="section__content-left">
+                    
+                <div class="section-input">
+                    <label for="case-category">Case Category (select)</label>
+                    <select class="section-input--background" id="case-category" type="text">
+                        <option value="">Active IV-A</option>
+                        <option value="option-1">Option-1</option>
+                        <option value="option-2">Option-2</option>
+                        <option value="option-3">Option-3</option>
+                        <option value="option-4">Option-4</option>
+                    </select>
+                </div>
+                <div class="section-input">
+                    <label for="arrears-only-indicator">Arrears Only Indicator (Optional)</label>
+                    <input class="section-input" id="arrears-only-indicator" type="text" placeholder="None">
+                </div>
+                <div class="section-input">
+                    <label for="assigned-county-of-ownership">Assigned County of Ownership (Optional)</label>
+                    <input class="section-input" id="assigned-county-of-ownership" type="text" placeholder="None">
+                </div>
+                <div class="section-input">
+                    <label for="intergovermental-case-status">Intergovermental Case Status (details)</label>
+                    <input class="section-input" id="intergovermental-case-status" type="text" placeholder="None">
+                </div>
+                <div class="section-input">
+                    <label for="handling-indicator-for-applicant">Special Handling Indicator for Applicant (Optional)</label>
+                    <input class="section-input" id="handling-indicator-for-applicant" type="text" placeholder="None">
+                </div>
+                <div class="section-input">
+                    <label for="handling-indicator-for-parent">Special Handling Indicator for Other Parent
+                        (Optional)</label>
+                    <input class="section-input" id="handling-indicator-for-parent" type="text" placeholder="None">
+                </div>
+            </div>
+
+            <div class="section__content-right">
+                <div class="section-input">
+                    <label for="IV-D-indicator">IV-D Indicator<span class="required-input">*</span></label>
+                    <select class="section-input--background" id="IV-D-indicator" type="text" required>
+                        <option value="">Non-IV-D</option>
+                        <option value="option-1">Option-1</option>
+                        <option value="option-2">Option-2</option>
+                        <option value="option-3">Option-3</option>
+                        <option value="option-4">Option-4</option>
+                    </select>
+                </div>
+                <div class="section-input">
+                    <label for="intergovernmental-case-category">Intergovernmental Case Category (Optional)</label>
+                    <input class="section-input" id="intergovernmental-case-category" type="text" placeholder="None">
+                </div>
+                <div class="section-input">
+                    <label for="intergovernmental-case-type">Intergovernmental Case Type (Optional)</label>
+                    <input class="section-input" id="intergovernmental-case-type" type="text" placeholder="None">
+                </div>
+                <div class="section-input">
+                    <label for="case-number">Case Number</label>
+                    <input class="section-input--background-search" id="case-number" type="search" placeholder="Search Case Number">
+                </div>
+                <div class="section-input">
+                    <label for="referral-number">Referral Number</label>
+                    <input class="section-input--background-search" id="referral-number" type="search" placeholder="Search Referral Number">
+                </div>
+            </div>
+         </form>
+    </section>
+
+    <section class="section">
+        <div class="section__title">
+            <div class="title-section">System Information</div>
+        </div>
+        <form class="section__content" action="">
+                    
+            <div class="section__content-left">
+                <div class="section-input">
+                    <label for="enrollment">Enrollment Taken by User</label>
+                    <input class="section-input--background-search" id="enrollment" type="search" placeholder="Search Input">
+                </div>
+                <div class="section-input">
+                    <label for="worker">Worker (Optional)</label>
+                    <input class="section-input--background-search" id="worker" type="search" placeholder="Search Input">
+                </div>
+            </div>
+
+            <div class="section__content-right">
+                <div class="section-input">
+                    <label for="intake Supervisor">Intake Supervisor (Optional)</label>
+                    <input class="section-input--background-search" id="intake Supervisor" type="search" placeholder="Search">
+                </div>
+                <div class="section-input">
+                    <label for="owner">Owner (Optional)</label>
+                    <input class="section-input--background-search" id="owner" type="search" placeholder="Search">
+                </div>
+            </div>
+        </form>
+    </section>
+    <div class="blank-button">
+        <button class="button " type="submit">Next</button>
+    </div>
+        
+</div> 
+</body>
+</html>
