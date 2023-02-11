@@ -8,10 +8,6 @@ body{
     box-sizing: border-box;
     position: relative;
 }
-
-
-
-
 .header{
     background-color: black;
     display: flex;
@@ -25,17 +21,9 @@ body{
     width: 1920px;
     z-index: 100;
 }
-
-
-
-
-
-
-
 .header__logo{
     width: 15%;
 }
-
 .logo img{
     background-color: white;
     width: 100%;
@@ -56,14 +44,13 @@ body{
     padding: 0 15px;
 }
 .nav__item{
-      font-family: 'Rosario';
+    font-family: 'Rosario';
     font-style: italic;
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
-     flex-grow: 1;
+    flex-grow: 1;
     text-align: center;
-
 }
 .screen-gallery{
     width: 95%;
@@ -88,14 +75,14 @@ body{
 .screen-gallery__two-column{
     position: relative;
     left: -1000px;
-    transition: 1s; /*Скорость перехода состояния элемента*/
-    animation: show-left 3s 1; /* Указываем название анимации, её время и количество повторов*/
-    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    transition: 1s; 
+    animation: show-left 3s 1; 
+    animation-fill-mode: forwards; 
     animation-delay: 3s;
 }
 @keyframes show-left{
     0%{
-    left: -1000px;
+    left: -1000px; 
     }
     100% {
     left: 0px;
@@ -118,9 +105,9 @@ body{
 .screen-gallery__four-column{
     position: relative;
     right: -1000px;
-    transition: 1s; /*Скорость перехода состояния элемента*/
-    animation: show-right 3s 1; /* Указываем название анимации, её время и количество повторов*/
-    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    transition: 1s;
+    animation: show-right 3s 1;
+    animation-fill-mode: forwards; 
     animation-delay: 3s;
 }
 @keyframes show-right{
@@ -183,7 +170,7 @@ body{
   }  
 }
 .services-item-2{
-    animation: show-round-item-2 15s ease-in-out infinite; /* Указываем название анимации, её время и количество повторов*/
+    animation: show-round-item-2 15s ease-in-out infinite; 
     animation-delay: 1s;
 }
 @keyframes show-round-item-2{
@@ -204,7 +191,7 @@ body{
   }  
 }
 .services-item-3{
-    animation: show-round-item-3 15s ease-in-out infinite; /* Указываем название анимации, её время и количество повторов*/
+    animation: show-round-item-3 15s ease-in-out infinite; 
     animation-delay: 1s;
 }
 @keyframes show-round-item-3{
@@ -225,8 +212,7 @@ body{
   }  
 }
 .services-item-4{
-    animation: show-round-item-4 15s ease-in-out infinite; /* Указываем название анимации, её время и количество повторов*/
-    animation-delay: 1s;
+    animation: show-round-item-4 15s ease-in-out infinite; 
 }
 @keyframes show-round-item-4{
 0% {
