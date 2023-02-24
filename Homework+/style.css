@@ -1,0 +1,684 @@
+:root{
+    font-size: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    padding: 0;
+}
+h1{
+    font-weight: 700;
+    font-size: 6.5rem;
+    line-height: 78px;
+    text-align: center;
+}
+body{
+    margin: 0 auto;
+}
+.wrap{
+    background: linear-gradient(180deg, #333333 0%, #090707 11.98%);
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.header__logo{
+    width: 15%;
+}
+.logo a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.logo a img{
+    margin-right: 6px;
+}
+.header__menu{
+    width: 65%;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+.menu__item{
+    Padding-right: 3%
+}
+.menu__item a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.header__button{
+    width: 20%;
+}
+.button-menu{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.4rem;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 5px;
+    width: 204px;
+   padding: 5% 16%;
+   box-sizing: border-box;
+}
+.button-main{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.4rem;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 5px;
+    width: 204px;
+   padding: 6.5% 21%;
+   padding: 16px 61px;
+   box-sizing: border-box;
+}
+.section-main{
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    width: 60%;
+    margin-bottom: 47px;
+}
+.text{
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 26px;
+    margin-bottom: 60px;
+    text-align: ;
+}
+.section-main__button{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+.section-main__button .button-blue{
+    margin-right: 23px;
+}
+.button-blue{
+    background-color: #3775ED;
+    border:  1.5px solid #3775ED;
+    box-sizing: border-box;
+    width: 204px;
+}
+.section-main__image img{
+    width: 100%;
+}
+.section-your-ideas{
+    padding-bottom: 90px;
+    border-bottom: 1px solid #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subtitle{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 48px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.card{
+    width: 32%;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 3% 4%;
+    position: relative;
+}
+.background-orange{
+    background: #C96408;
+}
+.background-purpur{
+    background: #7937BB;
+}
+.background-blue{
+    background: #3775ED;
+}
+.card__title{
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin-bottom: 14px;
+}
+.card__description{
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 25px;
+}
+.card__icon{
+    margin-bottom: 20px;
+}
+.card__img-1{
+    position: absolute;
+    top: -25px;
+    left: -23px;
+}
+.card__img-2{
+    position: absolute;
+    top: -25px;
+    right: -23px;
+}
+.section-your-ideas__tool{
+    position: relative;
+    background: #1A1919;
+    border-radius: 5px;
+    padding: 5.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-your-ideas__tool img{
+   width: 100%;
+}
+.section-your-ideas__tool .text{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 55%;
+}
+.icon-webflow{
+    position: absolute;
+    top: 10%;
+    left: 8%;
+}
+.icon-css{
+    position: absolute;
+    top: 60%;
+    left: 35px;
+}
+.icon-vue{
+    position: absolute;
+    top: 23%;
+    right: 3%;
+}
+.icon-html{
+    position: absolute;
+    top: 80%;
+    left: 15%;
+}
+.icon-bubble{
+    position: absolute;
+    top: 25px;
+    left: 50%;
+}
+.icon-js{
+    position: absolute;
+    top: 75%;
+    right: 20%;
+}
+.icon-react{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}
+.icon-phyton{
+    position: absolute;
+    top: 70%;
+    right: 6%;
+}
+.section-featured-developers{
+    padding-bottom: 85px;
+    border-bottom:  1px solid #282828;
+    margin-bottom: 60px;
+}
+.developer-cards{
+    display: grid;
+    grid-template-columns : repeat(4, 1fr);
+    row-gap: 28px;
+    justify-items: center;
+    padding-bottom: 95px;
+}
+.developer-card{
+    position: relative;
+    max-width: 282px;
+    overflow: hidden;
+    margin-right: 24px;
+}
+.developer-card__title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(9, 7, 7, 0.4);
+    backdrop-filter: blur(12.5px);
+    border-radius: 0px 0px 5px 5px;
+    padding: 4% 6%;
+}
+.developer-card__title-prof{
+    display: flex;
+    align-items: center;
+}
+.developer-card__title-name{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+.prof-icon{
+    margin-right: 4px;
+}
+.prof-icon img{
+    width: 20px;
+    height: 20px;
+}
+.prof-text{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 17px;
+}
+.icon-message{
+    position: absolute;
+    right: 18%;
+    top: 50%;
+}
+.featured-developers__button{
+    text-align: center;
+}
+.section-message{
+    text-align: center;
+}
+.block-message{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 27px;
+    justify-items: center;
+    padding-bottom: 140px;
+}
+.message{
+    max-width: 378px;
+    background: #1A1919;
+    border-radius: 5px;
+    padding: 4%;
+    box-sizing: border-box;
+}
+.message__text{
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 20px;
+    margin-bottom: 25px;
+    text-align: initial;
+}
+.message__autor{
+    display: flex;
+    align-items: center;
+}
+.autor-photo{
+    margin-right: 12px;
+}
+.autor-name{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 19px;
+}
+.section-enjoy-life{
+    position: relative;
+    padding-bottom: 150px;
+    border-bottom: 1px solid #282828;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.section-enjoy-life__background {
+    border-radius: 10px;
+    width: 100%;
+}
+.section-enjoy-life__background img{
+    position: relative;
+    width: 100%;
+}
+.section-enjoy-life__text{
+    position: absolute;
+    top: 15%;
+    left: 6%;
+}
+.join-clubweb{
+    padding-bottom: 60px;
+    border-bottom: 1px solid #282828;
+    margin-bottom: 70px;
+}
+.join-clubweb__backround{
+    text-align: center;
+    box-sizing: border-box;
+    background: #3775ED;
+    border-radius: 10px;
+    padding: 2%;
+    padding-bottom: 60px;
+}
+.join-clubweb-button{
+    text-align: center;
+}
+.button-black{
+    background: #1A1919;
+    border-color: #1A1919;;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.footer__link a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 22px;
+}
+.social-link{
+    display: flex;
+    
+}
+.social-icon{
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.social-icon img{
+    width: 20px;
+    height: 20px;
+}
+.button-main:hover{
+    transform: scale(1.05);
+}
+.header__button:hover,
+.featured-developers__button:hover,
+.join-clubweb-button:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:1800px) {
+    .container{
+         width: 90%;
+     }
+    h1{
+        font-size: 6rem;
+    }
+}
+@media screen and (max-width:1425px) {
+    h1{
+       font-size: 6rem;
+    }
+    .title{
+        width: 80%;
+    }
+    .section-main{
+    padding-bottom: 100px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .section-main{
+        padding-bottom: 100px;
+    }
+    .section-your-ideas__tool img{
+        width: 80%;
+    }
+    .developer-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .message{
+        max-width: 330px;
+    }
+}
+@media screen and (max-width:1140px) {
+    h1{
+        font-size: 5rem;
+    }
+    .section-main{
+        padding-bottom: 100px;
+    }
+    .section-your-ideas__tool img{
+        width: 80%;
+    }
+    .developer-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .block-message{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-enjoy-life{
+        padding-bottom: 100px;
+    }
+}
+@media screen and (max-width:970px) {
+    .header__menu{
+        width: 60%;
+    }
+    .header__button{
+        width: 30%;
+    }
+    .section-your-ideas__tool img{
+        width: 60%;
+    }
+    .developer-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:890px) {
+    h1{
+        font-size: 4.5rem;
+        line-height: 65px;
+    }
+    .title{
+        margin-bottom: 30px;
+    }
+    .text{
+        font-size: 2rem;
+    }
+    .section-your-ideas__tool img{
+        width: 50%;
+    }
+    .developer-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:802px) {
+    .header__menu{
+        width: 50%;
+    }
+    h1{
+        font-size: 3.8rem;
+        line-height: 60px;
+    }
+    .text{
+        font-size: 1.5rem;
+    }
+    .message{
+        max-width: 270px;
+    }
+    .section-enjoy-life__text{
+        top: 20%
+    }
+    .section-enjoy-life__text .subtitle{
+        line-height: 25px;
+    }
+    .subtitle{
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width:677px) {
+    .header__menu{
+        display: none;    
+    }
+    .header__button{
+        display: none;
+    }
+    .title{
+        width: 90%;
+        margin-bottom: 25px;
+    }
+    h1{
+        font-size: 3.5rem;
+        line-height: 44px;
+    }
+    .text{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+   .section-main__button{
+        flex-direction: column;
+        width: 100%;
+   }
+   .section-main__button a{
+        width: 100%;
+   }
+   .button-blue{
+     margin-bottom: 20px;
+   }
+   .section-main{
+     padding-bottom: 60px;
+   }
+   .subtitle{
+        text-align: center;
+        font-size: 2.4rem;
+        margin-bottom: 5px;
+   }
+   .cards{
+        flex-direction: column;
+   }
+   .developer-card{
+        margin-right: 0;
+   }
+   .card{
+        width: 100%;
+        padding: 8%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+   }
+   .card__title{
+        font-size: 2.2rem;
+   }
+   .card__description{
+        font-size: 1.6rem;
+   }
+   .card__img-1, .card__img-2{
+        display: none;
+   }
+   .section-your-ideas{
+        border: none;
+        padding-bottom: 50px;
+    }
+   .section-your-ideas__tool{
+        padding: 25% 5%;
+   }
+   .section-your-ideas__tool .subtitle{
+        line-height: 29px;
+   }
+   .section-your-ideas__tool .text{
+        line-height: 28px;
+        max-width: 85%;
+   }
+   .icon-webflow{
+        position: absolute;
+        top: 10%;
+        left: 8%;
+    }
+    .icon-css{
+        position: absolute;
+        top: 75%;
+        left: 35px;
+    }
+    .icon-vue{
+        position: absolute;
+        top: 20%;
+        right: 3%;
+    }
+    .icon-html{
+        position: absolute;
+        top: 85%;
+        left: 35%;
+    }
+    .icon-bubble{
+        position: absolute;
+        top: 20%;
+        left: 35%;
+    }
+    .icon-js{
+        position: absolute;
+        top: 75%;
+        right: 25%;
+    }
+    .icon-react{
+        position: absolute;
+        top: 5%;
+        right: 25%;
+    }
+    .icon-phyton{
+        position: absolute;
+        top: 85%;
+        right: 3%;
+    }
+   .developer-cards{
+        grid-template-columns: repeat(1, 1fr);
+   }
+   .developer-card{
+        width: 100%;
+   }
+   .block-message{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 50px;
+   }
+   .message{
+        max-width: 100%;
+   }
+    .footer{
+        display: none;
+    }
+    .join-clubweb{
+        margin-bottom: 0;
+    }
+    .section-enjoy-life{
+        padding-bottom: 40px;
+    }
+    .section-enjoy-life__background img{
+        height: 420px;
+        right: 45%;
+        width: auto;
+    }
+    .section-enjoy-life__text{
+        top: 20%;
+    }
+    .section-enjoy-life__text .subtitle{
+        line-height: 34px;
+        text-align: start;
+        width: 60%;
+        margin: 0;
+    }
+    .section-enjoy-life__text .text{
+        text-align: start;
+        width: 75%;
+    }
+    .join-clubweb__backround{
+        padding: 7%;
+    }
+    .join-clubweb__backround .subtitle,
+    .join-clubweb__backround .text{
+        text-align: start;
+        line-height: 30px;
+    }
+    .join-clubweb__backround .text{
+        line-height: 22px;
+        margin-bottom: 40px;
+    }
+    .join-clubweb-button{
+        margin-bottom: 25px;
+        text-align: start;
+}
+}

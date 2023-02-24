@@ -1,0 +1,146 @@
+:root{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+}
+ul{
+    padding-left: 20px;;
+    margin: 0;
+}
+.wrap{
+    max-width: 755px;
+    height: 100%;
+    background: #FFB084;
+    border-radius: 20px;
+    padding: 1%;
+    margin: 0 auto;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    row-gap: 14px;
+    column-gap: 22px;
+}
+.card-percon{
+    background: #FFFFFF;
+    box-shadow: 7px 7px 0px #000000;
+    border-radius: 20px;
+    padding: 8% 10%;
+    grid-row: 1/4;
+}
+.card__name{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 28px;
+    margin-bottom: 17px;
+}
+.card__photo{
+    margin-bottom: 17px;
+    text-align: center;
+}
+.bold{
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 14px;
+}
+.inform{
+    font-size: 1.2rem;
+}
+.inform > div{
+    margin-bottom: 15px;
+}
+.inform > div:nth-child(5){
+    margin-bottom: 0px;
+}
+.inform-flex{
+    display: flex;
+}
+.inform-flex div:nth-child(1){
+    margin-right: 30px;
+}
+.card-citation{
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 7px 7px 0px #000000;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 16px;
+    grid-column-start: 1;
+    grid-row: 5/6ж
+}
+.card-bio{
+    grid-row-start: 1;
+    grid-column: 2/4;
+}
+.card-bio,
+.card-personality{
+    background: #FFFFFF;
+    box-shadow: 7px 7px 0px #000000;
+    border-radius: 20px;
+    padding: 4% 6%;
+}
+.subtitle{
+     font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 16px;
+    margin-bottom: 7px;
+}
+.card-goals__subtitle{
+    color: #29A71E;;
+}
+.card-frustrations__subtitle{
+    color: #E13535;
+}
+.card-dream__subtitle{
+    color: #3675B0;
+}
+.card-bio__desc{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 16px;
+}
+.card-goals,
+.card-frustrations,
+.card-dream{
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 8% 10%;
+}
+.card-goals{
+    box-shadow: 7px 7px 0px #29A71E;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.card-frustrations{
+    box-shadow: 7px 7px 0px #E13535;
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+.card-dream{
+    box-shadow: 7px 7px 0px #3675B0;
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+.card-personality{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    padding: 8% 5% 8% 15%;
+    box-sizing: border-box;
+}
+.card-personality__descr{
+    list-style: none;
+    padding: 0;
+}
+.card-descr,
+.card-bio__descr,
+.card-personality__descr{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 16px;
+}
