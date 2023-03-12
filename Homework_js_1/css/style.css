@@ -1,0 +1,38 @@
+body{
+    font-size: 25px;
+    margin: 0;
+}
+div{
+    font-weight: 600;
+    font-size: 30px;
+
+}
+header{
+    box-sizing: border-box;
+}
+nav{
+    display: inline-block;
+    height: 400px;
+    width: 30%;
+    border: 5px solid blue;
+    padding: 9% 10%;
+    text-align: center;
+    box-sizing: border-box;
+}
+section{
+    display: inline-block;
+    padding: 9% 10%;
+    height: 400px;
+    width: 70%;
+    border: 5px solid green;
+    text-align: center;
+    box-sizing: border-box;
+}
+footer{
+    height: 200px;
+    width: 100%;
+    border: 5px solid yellow;
+    text-align: center;
+    padding-top: 4%;
+    box-sizing: border-box;
+}
