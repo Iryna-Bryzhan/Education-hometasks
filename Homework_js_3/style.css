@@ -1,0 +1,27 @@
+*{
+    font-size: 1.3rem;
+}
+pre{
+    background: silver;
+
+}
+.green{
+    color: green;
+}
+li:nth-child(odd){
+ background: #e1e6e5;
+ margin: 1rem 0;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.homework{
+    padding: 40px 10px;
+    width: 40%;
+    border: 3px solid black;
+    line-height: 2.5rem;
+}
+span{
+    background-color: red;
+}
