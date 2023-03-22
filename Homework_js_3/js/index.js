@@ -137,8 +137,9 @@ arr.forEach((e,i,a)=>{
 
     //масиву, який виводить всі непарні числа в параграфі
 
-    let evenNumbers = myArray.filter(function(elem) {
-        return elem % 2 == 0;
+    let evenNumbers = myArray.filter(item => {
+        if (item % 2 == 0)
+        return true;
     });
 
     console.log(evenNumbers);
@@ -147,8 +148,9 @@ arr.forEach((e,i,a)=>{
 
     //масиву, який виводить всі парні числа в спані з червоним тлом
 
-    let oddNumbers = myArray.filter(function(elem) {
-        return elem % 2 !== 0;
+    let oddNumbers = myArray.filter(item => {
+        if (item % 2 !== 0)
+        return true;
     });
 
     console.log(oddNumbers);
