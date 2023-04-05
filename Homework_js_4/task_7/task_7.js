@@ -10,14 +10,16 @@ class Worker{
 		this.surname = surname;
 		this.rate = rate;
 		this.days = days;
-		this.getSalary = function getSalary(){
-			return this.rate * this.days;
-	}
+		//this.getSalary = function getSalary(){
+		//	return this.rate * this.days;
+	//}
 }
 };
-	
+Worker.prototype.getSalary = function getSalary(){
+	return this.rate * this.days;
+}
 
-const worker1 = new Worker('Dima', 'Ivanov', 680, 23);
+const worker1 = new Worker('Dima', 'Ivanov', 680, 21);
 
 document.write(`<div>${worker1.name} ${worker1.surname} <br/> Salary: ${worker1.getSalary()} </div>`);
 console.log(worker1, worker1.getSalary())

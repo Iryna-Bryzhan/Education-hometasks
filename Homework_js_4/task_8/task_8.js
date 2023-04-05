@@ -7,24 +7,25 @@
 class MyString {
 	constructor(str) {
 		this.str = str;
-}
+	}
+};
 
 
-reverse() {
+MyString.prototype.reverse = function reverse(){
     let reversedStr = "";
     for (let i = this.str.length - 1; i >= 0; i--) {
     reversedStr = reversedStr + this.str[i];
     }
     return reversedStr;
-}
+};
 
-ucFirst() {
+MyString.prototype.ucFirst = function ucFirst() {
 	let firstLetter = this.str.charAt(0);
 	let restString = this.str.slice(1);
 	return firstLetter.toUpperCase() + restString;
-} 
+};
 
-ucWords() {
+MyString.prototype.ucWords = function ucWords() {
 	let word = this.str.split(' ');
 	let words = [];
 	for (let i = 0; i < word.length; i++) {
@@ -34,9 +35,9 @@ ucWords() {
 	}
 	return words.join(' ');
 }
-}
 
-let myString = new MyString('word1 word2 word3 word4 word5');
-console.log(myString.reverse())
-console.log(myString.ucFirst())
-console.log(myString.ucWords())
+
+let myString = new MyString('word1 word2 word3 word4');
+console.log(myString.reverse());
+console.log(myString.ucFirst());
+console.log(myString.ucWords());
