@@ -1,0 +1,11 @@
+#calc{
+    width: 400px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 28px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
