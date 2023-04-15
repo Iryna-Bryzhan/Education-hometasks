@@ -20,7 +20,7 @@ Animal.prototype.eat = function eat(){
     console.log("Така тварина їсть")
 }
 Animal.prototype.sleep = function sleep(){
-    console.log("Така тварина спить")
+    console.log("Тварина спить")
 };
 
 
@@ -72,14 +72,14 @@ Horse.prototype.eat = function eat(){
 }
 
 
-const cat1 = new Cat("Риба", "часний дім", "Мурзік", "Сіамский");
+const cat1 = new Cat("Риба", "приватний дім", "Мурзік", "Сіамский");
 const cat2 = new Cat("Сир", "квартира", "Люся", "Шотланська");
 const dog1 = new Dog("м'ясо", "дім", "Рекс", "коротка");
 const dog2 = new Dog("Кісточки", "двір", "Патрон", "коротка");
 const horse1 = new Horse("зелень", "загін", "Ворон", "Чорний");
 
  
-/*
+
 console.log(dog1)
 dog1.sleep()
 dog1.makeNoise()
@@ -94,7 +94,6 @@ console.log(horse1)
 horse1.sleep()
 horse1.makeNoise()
 horse1.eat()
-*/
 
 
 /*
@@ -107,15 +106,11 @@ function Vet (nameVet) {
    this.nameVet = nameVet;
 }
 
-Vet.prototype = new Animal();
-
 const vet1 = new Vet("Іван");
 
 Vet.prototype.treatAnimal = function treatAnimal(animal){
     return `Раціон тварини: ${animal.food}; місце проживання: ${animal.location};`
 };
-
-//console.log(vet1);
 
 function main (){
     let animals = [];
