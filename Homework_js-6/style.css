@@ -1,0 +1,25 @@
+body{
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#cards{
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+}
+#card{
+    margin: 0 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#card img{
+   max-width: 250px;
+}
+.prise{
+    font-size: 20px;
+    font-weight: 600;
+}
