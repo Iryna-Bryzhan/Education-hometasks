@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Homework_JS-8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ol>
+       
+        <li>Створіть 2 інпути та одну кнопку. Зробіть так, щоб інпути обмінювалися вмістом.</li>
+
+        <input id="input1" type="text">
+        <input id="input2" type="text">
+        <button id="btn" type="button">Змінити</button>
+
+        <li> Створіть 5 див на сторінці потім використовуючи getElementsByTagName і forEath поміняйте дивам колір фону.</li>
+
+        <div>Hello Word</div>
+        <div>Hello Word</div>
+        <div>Hello Word</div>
+        <div>Hello Word</div>
+        <div>Hello Word</div>
+
+        <li> Створіть багаторядкове поле для введення тексту та кнопки. Після натискання кнопки користувачем програма повинна
+            згенерувати тег div з текстом, який був у багаторядковому полі. багаторядкове поле слід очистити після
+            переміщення інформації</li>
+
+        <textarea name="coment" id="coment_input" cols="30" rows="10"></textarea>
+        <br>
+        <button id="coment_btn" type="button">Відправити</button>
+        <section class="comentSection"></section>
+        
+        <li>
+            Створіть картинку та кнопку з назвою "Змінити картинку"
+            зробіть так щоб при завантаженні сторінки була картинка
+            https://itproger.com/img/courses/1476977240.jpg
+            При натисканні на кнопку вперше картинка замінилася на
+            https://itproger.com/img/courses/1476977488.jpg
+            при другому натисканні щоб картинка замінилася на
+            https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png </li>
+        <section class="image">
+            <img src="https://itproger.com/img/courses/1476977240.jpg" alt="html" srcset="">
+        </section>
+        <button id="img_btn">Змінити картинку</button>
+        <li>Створює на сторінці 10 парахрафів і зробіть так, щоб при натисканні на параграф він зникав </li>
+
+        <input id="quantity" type="text">
+        <button id="quantity_btn">Створити</button>
+        <section class="sectionParagraphs">
+        </section>
+
+        <li>
+            Зробити робочими кнопки з виводом відповідних дій на сторінку приклад 008_DOM
+        </li>
+    </ol>
+
+    <ul id="list">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ul>
+    <br />
+    <input class="elem_nav" type="button" onclick="selectFirstChild()" value="Выбрать первый элемент" /><br />
+    <input class="elem_nav" type="button" onclick="selectLastChild()" value="Выбрать последний элемент" /><br />
+    <input class="elem_nav" type="button" onclick="selectNextNode()" value="Выбрать следующий элемент" /><br />
+    <input class="elem_nav" type="button" onclick="selectPrevNode()" value="Выбрать предыдущий элемент" /><br />
+    <input class="elem_nav" type="button" onclick="createNewChild()" value="Добавить элемент" /><br />
+    <input class="elem_nav" type="button" onclick="removeLastChild()" value="Удалить элемент" /><br />
+    <input class="elem_nav" type="button" onclick="createNewChildAtStart()" value="Добавить  в начало" /><br /><br /><br />
+    
+<script src="./index.js"></script>
+
+</body>
+
+</html>

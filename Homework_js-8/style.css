@@ -1,0 +1,49 @@
+* {
+    font-size: 1.3rem;
+}
+body{
+      margin: 0 30px;
+}
+pre {
+    background: silver;
+}
+
+.green {
+    color: green;
+}
+
+li:nth-child(odd) {
+    margin: 1rem 0;
+}
+div{
+    margin-bottom: 10px;
+}
+#coment_input{
+    width: 70%;
+    margin-bottom: 10px;
+}
+#coment_btn{
+    margin-bottom: 20px;
+}
+.coment_text, .paragraphs{
+    width: 70%;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid rgb(9, 128, 44);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(6, 87, 37, 0.5);
+}
+.image{
+    width: 425px;
+    margin: 30px 0;
+}
+.image img{
+    width: 100%;
+}
+.elem_nav{
+    width: 450px;
+}
+.selected {
+    color: red;
+    font-weight: 600;
+  }
