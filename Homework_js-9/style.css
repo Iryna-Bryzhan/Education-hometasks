@@ -1,0 +1,85 @@
+* {
+    font-size: 1.3rem;
+}
+
+pre {
+    background: silver;
+
+}
+
+.green {
+    color: green;
+}
+
+li:nth-child(odd) {
+    background: #e1e6e5;
+    margin: 1rem 0;
+}
+.black {
+    background: black;
+}
+
+.silver {
+    background: rgba(88, 88, 88, .5);
+}
+
+.red {
+    background: rgba(231, 40, 40, 0.5);
+}
+
+.green {
+    background: rgba(39, 211, 76, 0.5);
+}
+
+#container-stopwatch {
+    color: white;
+    width: fit-content;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px black;
+}
+
+.stopwatch-display {
+    background: rgba(22, 97, 12, 0.5);
+    padding: 1.5rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.stopwatch-display span {
+    font-size: 2rem;
+}
+
+.stopwatch-control button {
+    text-transform: uppercase;
+    color: white;
+    background: rgba(0, 0, 0, 0.829);
+    border: none;
+    cursor: grab;
+}
+
+.stopwatch-control button:nth-child(2) {
+    margin: 0 .5rem;
+}
+.tel{
+    margin: 0 30px;
+}
+label{
+    display: block;
+    font-size: 24px;
+}
+input{
+    display: block;
+    padding: 8px 20px;
+}
+:placeholder-shown{
+    font-size: 25px;
+}
+.errorTel{
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: red;
+}
