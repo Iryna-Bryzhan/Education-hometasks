@@ -18,10 +18,10 @@ const display = document.getElementById('display-input');
 
 function numberClicked(number) {
     if (operator === null) {
-        display.value = number;
+        display.value += number;
         firstOperand = parseFloat(display.value);
     } else {
-        display.value = number;
+        display.value += number;
         secondOperand = parseFloat(display.value);
     }
 } 

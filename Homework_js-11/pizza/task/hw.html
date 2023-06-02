@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.box {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            box-shadow: 1px 1px 30px 2px blue;
+            left: 20%;
+            top: 150px;
+        }
+
+        section{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <section>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+    </section>
+    <!--
+Створи клас, який буде створювати користувачів з ім'ям та прізвищем. 
+Додати до класу метод для виведення імені та прізвища
+
+Створи div висотою 400 пікселів і додай на нього подію наведення мишки. 
+Під час наведення мишки виведіть текстом
+координати, де знаходиться курсор мишки у тег title
+
+Створи кнопки 1,2,3,4 і при натисканні на кнопку виведи інформацію про те, 
+яка кнопка була натиснута
+-->
+    <script>
+        /*
+        task 1
+        Створи клас, який буде створювати користувачів з ім'ям та прізвищем. 
+        Додати до класу метод для виведення імені та прізвища
+       
+
+        class User {
+            constructor (firstname, surname) {
+                this.firstname = firstname;
+                this.surname = surname
+            }
+
+            show () {
+                return this.firstname
+            }
+        }
+
+        console.log(new User().show());
+        document.write(new User().show());
+     */
+
+     /*
+     task 2 
+     Створи div висотою 400 пікселів і додай на нього подію наведення мишки. 
+Під час наведення мишки виведіть текстом
+координати, де знаходиться курсор мишки у тег title
+    
+
+     var box = document.querySelector(".box");
+
+     box.addEventListener("mousemove", (e) => {
+         document.querySelector("title").innerText = `${e.clientX} / ${e.clientY}`;
+     })
+ */
+
+ /*
+ Створи кнопки 1,2,3,4 і при натисканні на кнопку виведи інформацію про те, 
+ яка кнопка була натиснута
+ */
+
+ /*
+ document.querySelectorAll("button").forEach((e)=>{
+     e.addEventListener("click", () => {
+         console.log(e.innerText)
+     })
+ })
+
+
+document.querySelector("section")
+.addEventListener("click", (e) => {
+    if(e.target.tagName === "BUTTON"){
+        console.log(e.target.innerText); 
+    }
+})
+ */
+
+    </script>
+</body>
+
+</html>
