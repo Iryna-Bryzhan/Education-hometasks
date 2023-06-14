@@ -1,0 +1,31 @@
+h2{
+    text-align: center;
+}
+#weather{
+    width: 30%;
+    background-color: rgb(61, 144, 61);
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    font-size: 30px;
+    color: white;
+    line-height: 180%;
+    box-sizing: border-box;
+}
+.weather-info{
+    display: flex;
+    justify-content: space-between;
+}
+.weather-city, .weather-temp{
+    font-size: 40px;
+    font-weight: 600;
+}
+table{
+    width: 40%;
+}
+table, th, td {
+    font-size: 23px;
+    margin: 0 auto ;
+    text-align: center;
+    border: 1px solid black;
+}
