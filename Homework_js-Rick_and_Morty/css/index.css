@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
+html{
+    --Karla:'Karla', sans-serif;
+    --black: black;
+}
+
+body * { 
+    box-sizing: border-box;
+ 
+}
+
+header, footer{
+    font-family: var(--Karla);
+}
+
+header{
+    box-shadow:  -2px 0px 8px 2px rgba(0, 0, 0, 0.1);
+}
+p{
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+body, .ul{
+    margin: 0;
+    padding: 0 ;
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.ul, .ul2{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner{
+    padding: 16px;
+}
+
+.search input{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    width: 500px;
+    padding: 1rem;
+    padding-left: 3rem;
+    background-image: url("../img/icon.svg");
+    background-repeat: no-repeat;
+    background-position: 16px center;
+}
+
+.cards{
+    display: flex;
+    gap: 1rem;
+    padding: 65px 0;
+}
+
+.card{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    height: 120px;
+    padding: 1%;
+    border-radius: 4px;
+    background-color:#FAFAFA ; 
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+    height: auto;
+    flex-direction: column;
+}
+.modal-body{
+    position: relative;
+    padding: 2%;
+    font-size: 18px;
+}
+.modal-body img{
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    width: 25%;
+}
+.cards{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card img{
+    width: 100%;
+}
+
+.box-modal{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.459);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-modal.active{
+    display: flex;
+}
+
+.modal{
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    position: relative;
+    padding: 1rem;
+    word-break: break-all;
+}
+
+#modal-closed{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: transform .5s linear ;
+    z-index: 2;
+}
+#modal-closed:hover{
+    transform: scale(1.1);
+}
+.ul360{
+    gap: 10px;
+    font-size: 15px;
+}
+.modal360{
+    width: 320px;
+}
+.container360{
+    width: 80%;
+}
+.ul360{
+    gap: 10px;
+    font-size: 15px;
+}
+.search .input360{
+    width: 300px;
+}
+.cards360{
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,0 +1,26 @@
+<script>
+
+
+    const data = new Promise((s, r) => {
+        setTimeout(() => {
+            s("ok")
+        } ,Math.floor(Math.random()*8000))
+
+        setTimeout(()=>{
+            r("not ok")
+        } ,4000)
+    })
+
+
+    data.then((arg)=>{
+        console.log(arg);
+    }).catch((arg)=>{
+        console.error(arg)
+    })
+
+
+    async function data () {
+       await data
+        // ......
+    }
+</script>
