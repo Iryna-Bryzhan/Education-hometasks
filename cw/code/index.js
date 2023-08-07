@@ -7,7 +7,3 @@ try {
 }catch (e) {
 
 }
-
-/**
- * @param 
- */

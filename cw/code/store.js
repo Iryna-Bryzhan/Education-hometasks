@@ -1,4 +1,4 @@
-
+// функція зберігає і відображає дані у вигляді таблиці, перевіряє, чи є дані, якщо так, то виводить таблицю, якщо ні, то повідомлення про відсутність даних. Для кожного продукту викликається функція createTableElement() для створення рядка таблиці з даними про продукт. Викликається функція clearHTMLContent(table), яка очищає вміст таблиці
 export function store() {
     const table = document.querySelector("tbody");
     clearHTMLContent(table)
@@ -22,6 +22,7 @@ const readonly = {
 }
 
 
+// функція створює новий рядок в таблиці і заповнює його даними про продукт. Додає кнопки для редагування і видалення та додає події на ці кнопки 
 function createTableElement(number, product, className, editEvent, deleteEvent, table) {
     const { name, quantity, price, status, description, date, category, url } = product;
     const tr = document.createElement("tr");
@@ -80,6 +81,7 @@ function createTableElement(number, product, className, editEvent, deleteEvent, 
     table.append(tr);
 }
 
+// Ця функція створює новий елемент <td> для таблиці. Якщо props - кнопка, то вона додається в <td>, інакше додоється текст.
 function newTd(props) {
 
     if (!props) return;
@@ -93,6 +95,8 @@ function newTd(props) {
     return td;
 }
 
+
+// функція знаходить прродукт, видаляє його зі списку у localStorage та зберігає оновлений список. Пошук і видалення об'єкту відбуваються у масиві allProducts
 function deleteEvent(product) {
     const { id } = product;
     const allProducts = JSON.parse(localStorage.storeProducts);
@@ -103,7 +107,7 @@ function deleteEvent(product) {
     store()
 }
 
-
+// функція знаходить в об'єкті прродукт, видаляє його зі списку у localStorage. При клікі на кнопку Редагувати відкриває модальне вікно з даними, також додана подія на закриття вікна. Запускає функцію showPropertyProduct
 function editEvent(product) {
     //name, quantity, price, status, description, date, category, url 
     let { id } = product;
@@ -119,6 +123,7 @@ function editEvent(product) {
     showPropertyProduct(oldObj, allProducts, modal)
 }
 
+// ця функція відповідає за збереження змінених даних, при клікі на кнопку Зберегти перебираються всі інпути і зчитується іх value, потім продукт додається у localStorage і закривається модальне вікно. Також змінює статус продукту в залежності від кількости товару. З допомогою createPropertyElement() створюються label і input 
 function showPropertyProduct(p, arr, modal) {
     const edit = document.getElementById("edit");
     const props = Object.entries(p);
@@ -158,7 +163,7 @@ function showPropertyProduct(p, arr, modal) {
     edit.append(...formData, btnSave)
 }
 
-
+// Ця функція створює елементи форми для редагування. Функція створює <label> з ім'ям властивості і <input> зі значенням. Якщо ім'я "status", то функція повертає порожній рядок, якщо ім'я id або category, то ці рядки тільки для читання, їх не можна змінювати
 function createPropertyElement(name, value, fnEvent) {
     const id = Math.floor(Math.random() * 1000000);
     const div = document.createElement("div");
@@ -187,7 +192,7 @@ function createPropertyElement(name, value, fnEvent) {
     return div
 }
 
-
+// Ця функція очищає вміст таблиці. Вона перевіряє, чи el є об'єктом, і якщо так, то встановлює innerHTML елемента на пустий рядок, тим самим очищуючи його вміст.
 function clearHTMLContent(el) {
     if (typeof el !== "object") return;
     el.innerHTML = "";

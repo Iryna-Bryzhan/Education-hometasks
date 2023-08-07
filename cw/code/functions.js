@@ -1,5 +1,6 @@
 const buttonSend = document.querySelector("#submit");
 
+// Ця функція відображає форму для введення даних про продукт в залежності від productType. Заповнення форми відбувається за допомогою інших функцій createStoreForm(), createRestoranForm(), createVideoForm(), які повертають масив елементів формю. Після створення форма додається в DOM (".product-body"). На кнопку buttonSend додається подія по кліку - викликається функцію sendData()
 export function showForm(productType = "магазин") {
     sendBtnDisabled()
     const productBody = document.querySelector(".product-body");
@@ -22,7 +23,7 @@ export function showForm(productType = "магазин") {
     });
 
 }
-
+ // Ця функції повертають масив елементів форми для магазину.
 function createStoreForm() {
     return [
         createElementForm(
@@ -43,6 +44,7 @@ function createStoreForm() {
     ]
 }
 
+ // Ця функції повертають масив елементів форми для ресторану.
 function createRestoranForm() {
     return [
         createElementForm(
@@ -63,6 +65,7 @@ function createRestoranForm() {
     ]
 }
 
+// Ця функції повертають масив елементів форми для відео хостингу.
 function createVideoForm() {
     return [
         createElementForm(
@@ -78,6 +81,7 @@ function createVideoForm() {
     ]
 }
 
+// Ця функція створює елемент форми для введення даних (лейбл, поле вводу, блок для відображення помилок), додає обробники подій для валідації введення
 function createElementForm(placeholder = "", type = "text", classInput = "", errorText = "Помилка", eventInput = () => { }) {
     const parent = document.createElement("div"),
         label = document.createElement("label"),
@@ -109,6 +113,7 @@ function createElementForm(placeholder = "", type = "text", classInput = "", err
     return parent
 }
 
+// Ця функція створює випадковий id для продуктів
 function createId() {
     let symbols = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890";
     let passLength = 8;
@@ -122,7 +127,7 @@ function createId() {
     return string;
 }
 
-
+// StoreProduct, RestProduct, VideoProduct - ці класи представляють типи продуктів, що зберігаються в системі. Кожен клас має властивості, які відповідають даним про продукт
 class StoreProduct {
     constructor(name, price, description, date) {
         this.id = createId();
@@ -160,6 +165,8 @@ let storeProducts = [];
 let restProducts = [];
 let videoProducts = [];
 
+
+// Ця функція створює об'єкт відповідного класу. Зберігає його у відповідний масив (storeProducts, restProducts або videoProducts) у форматі JSON та зберігає все у localStorage.
 function sendData(type) {
     let date = new Date();
     date = date.toLocaleString().split(",")[0].split(".").reverse().join(".") + date.toLocaleString().split(",")[1];
@@ -200,6 +207,7 @@ function sendData(type) {
     }
 }
 
+// Ця функція виконує валідацію даних у формі, і в залежності від результату валідації, показує або приховує блок з повідомленням про помилку.
 const validate = (value, classList, error, input) => {
     //const [...inputs] = document.querySelectorAll("input");
 
@@ -261,7 +269,7 @@ const validate = (value, classList, error, input) => {
 }
 
 
-// Активація кнопки 
+// Ця функція перевіряє, чи всі поля вводу пройшли валідацію і якщо всі поля валідні, то активується кнопка відправки.
 function buttonShow() {
     const [...inputs] = document.querySelectorAll("input");
     const rez = inputs.every(a => {
@@ -275,6 +283,7 @@ function buttonShow() {
     }
 }
 
+// Ця функція вимикає кнопку відправки форми.
 const sendBtnDisabled = () => {
     buttonSend.disabled = true;
 }
