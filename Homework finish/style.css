@@ -1,0 +1,49 @@
+
+body {
+    background-color: #050032;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+.container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.code, .result{
+    flex: 1;
+    text-align: start;
+    padding: 0 2%;
+}
+#htmlOutput{
+    width: 100%;
+    color: white;
+    border: 1px solid white;
+    height: 75vh;
+    padding: 2%;
+    background-color: black;
+    overflow: auto
+}
+textarea {
+    color: white;
+    width: 100%;
+    height: 75vh;
+    padding: 2%;
+    background-color: black;
+    border: 1px solid white;
+}
+textarea:focus{
+    border: 2px solid white;
+}
+
+@media (max-width: 960px) {
+    .container{
+        flex-direction: column;
+    }
+    #htmlOutput, textarea {
+    height: 32vh;
+    }
+}

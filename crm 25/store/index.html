@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header>     
+            <nav>
+                <div><a href="/">Головна</a></div>
+                <div id="export">Експортувати</div>
+                <div id="import">Імпортувати</div>
+                <div id="getAPI">Дістати дані по url</div>
+               
+                <div>Вийти</div>
+            </nav>
+    </header>
+    <main>
+        <nav>
+            <ul class="navigation">
+                <li><a href="../restoran/">Ресторан</a> </li>
+                <li><a href="../video/">Відео хостинг</a></li>
+                <li><a href="../store/">Магазин</a> </li>
+            </ul>
+        </nav>
+        <section id="box-show">
+           <table>
+               <thead>
+                   <tr>
+                       <th>#</th>
+                       <th>Назва</th>
+                       <th title="При настиску сортувати.">Залишок</th>
+                       <th title="При настиску сортувати.">Ціна</th>
+                       <th>Редагувати</th>
+                       <th>Статус</th>
+                       <th>Дата додавання</th>
+                       <th>Видалити</th>
+                   </tr>
+               </thead>
+               <tbody></tbody>
+           </table>
+        </section>
+    </main>
+    <footer></footer>
+    <div class="container-modal hide">
+        <div class="modal-window">
+            <span id="modal-close">❌</span>
+            <div class="modal-body">
+               <form id="edit">
+
+               </form>
+            </div>
+        </div>
+    </div>
+    <script src="../code/index.js" type="module"></script>
+    <style>
+        #edit {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           padding: 2rem 0;
+        }
+
+        #edit > div{
+            display: flex;
+            width: 70%;
+            padding: .5rem;
+        }
+
+        #edit > div > *{
+            width: 50%;
+        }
+
+        *[readonly]{
+           opacity: .5;
+        }
+    </style>
+</body>
+
+</html>
